@@ -6,5 +6,7 @@ stages{
 		steps{
 			connector("sample.json")
 			
-		}
+		}}
+}
+}
 	

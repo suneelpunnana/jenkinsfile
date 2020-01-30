@@ -6,11 +6,11 @@ stages{
 		steps{
 			collector()
 			
-		}
-		stage('build')
+		}}
+		stage('build'){
 		steps{
 			Build()
+		}}
 		}
-}
 }
 	

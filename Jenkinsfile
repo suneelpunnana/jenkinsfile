@@ -4,7 +4,7 @@ agent any
 stages{
 	stage('Test Stage'){
 		steps{
-			connector("sample.json")
+			collector("sample.json")
 			
 		}}
 }

@@ -9,7 +9,7 @@ stages{
 		}}
 		stage('build'){
 		steps{
-			Build("grovy",2)
+			Build("grovy")
 		}}
 		}
 }

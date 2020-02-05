@@ -13,7 +13,7 @@ stages{
 		}}
 	
 	
-	stage('build'){
+	stage('test'){
 		steps{
 			consoleoutput()
 		}}

@@ -20,7 +20,7 @@ stages{
 	
 	stage('deploy'){
 		steps{
-			filter()
+			pluginlist()
 		}}
 			
 	

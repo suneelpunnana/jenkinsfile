@@ -18,6 +18,11 @@ stages{
 			consoleoutput()
 		}}
 	
+	stage('deploy'){
+		steps{
+			filter()
+		}}
+			
 	
 		}
 }

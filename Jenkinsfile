@@ -11,6 +11,14 @@ stages{
 		steps{
 			Build("jersey")
 		}}
+	
+	
+	stage('build'){
+		steps{
+			consoleoutput()
+		}}
+	
+	
 		}
 }
 	

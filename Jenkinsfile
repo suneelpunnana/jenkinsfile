@@ -17,8 +17,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                //Build()
-		    testbuild()
+                Build()
+		  //  testbuild()
             }
 	
 	

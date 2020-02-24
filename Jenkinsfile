@@ -1,20 +1,26 @@
 pipeline {
     agent any
+    options {
+        skipStagesAfterUnstable()
+    }
     stages {
-        stage('Example Build') {
+        stage('Build') {
             steps {
-                echo 'Hello World'
+                echo 'Building'
             }
         }
-        stage('Example Deploy') {
-            when {
-                branch 'production'
+        stage('Test') {
+            steps {
+                echo 'Testing'
             }
+        }
+        stage('Deploy') {
             steps {
                 echo 'Deploying'
             }
         }
     }
 }
+   
 
 	

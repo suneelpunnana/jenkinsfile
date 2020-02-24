@@ -1,28 +1,20 @@
-pipeline{
-agent any
-stages{
-	stage('Test Stage'){
-		steps{
-			collector()
-			
-		}}
-		stage('build'){
-		steps{
-			Build()
-		}}
-	
-	
-	stage('test'){
-		steps{
-			consoleoutput()
-		}}
-	
-	stage('deploy'){
-		steps{
-			pluginlist()
-		}}
-			
-	
-		}
+pipeline {
+    agent any
+    stages {
+        stage('Example Build') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Example Deploy') {
+            when {
+                branch 'production'
+            }
+            steps {
+                echo 'Deploying'
+            }
+        }
+    }
 }
+
 	

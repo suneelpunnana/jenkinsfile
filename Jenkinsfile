@@ -16,12 +16,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying'
+                sh "curl -XGET -g http://52.14.229.175:8080/job/'${jobname}'/api/json?tree=builds[number,status,timestamp,id,result] -u admin:jenkins latest api:11035ac86f58bc32d03d8e873b7cc063a3"
             }
-		stage('check')
-		steps{
-			sh "curl -XGET -g http://52.14.229.175:8080/job/'${jobname}'/api/json?tree=builds[number,status,timestamp,id,result] -u admin:jenkins latest api:11035ac86f58bc32d03d8e873b7cc063a3"
-		}
+	
         }
     }
 }

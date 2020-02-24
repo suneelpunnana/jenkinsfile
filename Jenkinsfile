@@ -1,7 +1,5 @@
+@Library('shlib')_
 pipeline {
-	libraries{
-lib 'shlib'
-	}
     agent any
     options {
         skipStagesAfterUnstable()

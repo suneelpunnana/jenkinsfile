@@ -1,4 +1,4 @@
-@Library('shared_library')_
+@Library('shlib')_
 pipeline {
     agent any
     options {

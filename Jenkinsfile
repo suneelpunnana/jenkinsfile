@@ -8,7 +8,7 @@ stages{
 		}}
 		stage('build'){
 		steps{
-			Build("jersey")
+			Build()
 		}}
 	
 	

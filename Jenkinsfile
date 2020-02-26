@@ -20,13 +20,17 @@ pipeline {
                 Build()
 		  //  testbuild()
             }
-		stage('deliver'){
+		
+	
+        '
+	}
+	    
+	    
+	    stage('deliver'){
 			steps{
 				username()
 			}
 		}
-	
-        }
     }
 }
    

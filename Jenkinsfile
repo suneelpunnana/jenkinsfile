@@ -20,9 +20,6 @@ pipeline {
                 Build()
 		  //  testbuild()
             }
-		
-	
-        '
 	}
 	    
 	    

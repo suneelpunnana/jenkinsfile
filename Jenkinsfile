@@ -18,16 +18,17 @@ pipeline {
         stage('Deploy') {
             steps {
                 Build()
+		metrics()
 		  //  testbuild()
             }
 	}
 	    
 	    
-	    stage('deliver'){
+	    /*stage('deliver'){
 			steps{
 				username()
 			}
-		}
+		}*/
     }
 }
    

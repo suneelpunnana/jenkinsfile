@@ -4,8 +4,8 @@ pipeline {
     options {
         skipStagesAfterUnstable()
     }
-  /*  stages {
-        stage('Build') {
+    stages {
+      /*  stage('Build') {
             steps {
                 echo 'Building'
             }

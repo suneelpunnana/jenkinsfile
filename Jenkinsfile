@@ -25,6 +25,7 @@ pipeline {
 	}
 	    
 	    
+	    
 	    /*stage('deliver'){
 			steps{
 				username()

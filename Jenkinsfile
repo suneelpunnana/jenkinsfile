@@ -4,7 +4,7 @@ pipeline {
     options {
         skipStagesAfterUnstable()
     }
-    stages {
+  /*  stages {
         stage('Build') {
             steps {
                 echo 'Building'
@@ -15,7 +15,7 @@ pipeline {
                 echo 'Testing'
 		   // metrics()
             }
-        }
+        }*/
         stage('Deploy') {
             steps {
                 UserDetails(JSON)

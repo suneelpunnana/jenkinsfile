@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                test()
+                UserDetails(JSON)
 		
 		  
             }

@@ -24,7 +24,7 @@ pipeline {
             }
 	}
 	    
-	    
+
 	    
 	    /*stage('deliver'){
 			steps{

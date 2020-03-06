@@ -19,6 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 UserDetails(JSON)
+		    score(JSON)
 		
 		  
             }
